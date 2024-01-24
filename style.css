@@ -9,9 +9,11 @@
     --normal: #028302;
     --important:#f3a703;
 }
-*{
+
+html{
     background: var(--background-color-main);
 }
+
 .header__container {
     width: 100%;
     height: 5rem;
@@ -74,6 +76,7 @@
     padding:2rem;
     border: solid 0.3rem transparent;
     border-radius: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 .form__title.title2 {
@@ -89,13 +92,19 @@
 }
 
 .form__input--text.input__box {
+    background: var(--background-color-inputs);
     border: none;
     border-radius: 0.2rem;
-    width: 27rem;
+    width: 22rem;
     padding: 1rem;
 }
 
+.form__input--text.input__box:focus{
+    outline: none;
+}
+
 .form__input--priority.input__box {
+    background: var(--background-color-inputs);
     border: none;
     border-radius: 0.2rem;
     width: 20rem;
@@ -108,4 +117,69 @@
     border-radius: 0.2rem;
     padding: 1rem;
     color: #ffffff;
+}
+
+.tasks__container {
+    background: #ffffff;
+    width: 45rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:2rem;
+    border: solid 0.3rem transparent;
+    border-radius: 0.5rem;
+}
+.tasks__container h2{
+    font-family: var(--font);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    background: #ffffff;
+}
+
+.task__item {
+    background: var(--background-color-inputs);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border: solid 1px transparent;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.task-info__container {
+    background: var(--background-color-inputs);
+    display: flex;
+    gap: 1rem;
+    width: 15rem;
+}
+
+.task-type.span-urgent {
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: var(--warning);
+}
+
+.task__button--remove-task {
+    background-image: url("./assets/trash-icon.svg");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.task-type.span-important {
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: var(--important);
+}
+
+.task-type.span-normal {
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: var(--normal);
 }

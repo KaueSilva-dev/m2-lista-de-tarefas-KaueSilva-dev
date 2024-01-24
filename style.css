@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+:root {
+    --font: 'Roboto';
+    --primary: #3b5bdb;
+    --background-color-main: #e2e2e2;
+    --background-color-inputs: #ebebeb;
+    --background-itens-tasks: #f1f3f5;
+    --warning: #e40404;
+    --normal: #028302;
+    --important:#f3a703;
+}
+*{
+    background: var(--background-color-main);
+}
+.header__container {
+    width: 100%;
+    height: 5rem;
+    margin: 0 0 1rem 0;
+    box-shadow: 0px 5px 5px #ddd;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__content {
+    background: #ffffff;
+    width: 70rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.header__title {
+    background: #ffffff;
+    font-family: var(--font);
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.header__input--search.input__box {
+    font-family: var(--font);
+    font-size: 1rem;
+    background: var(--background-color-inputs);
+    border: none;
+    border-radius: 0.3rem;
+    width: 30rem;
+    height: 3rem;
+    padding: 0.5rem;
+}
+
+.header__input--search.input__box:focus {
+    outline: none;
+}
+
+.main__container {
+    background: var(--background-color-main);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__container {
+    background:#ffffff;
+    width: 45rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:2rem;
+    border: solid 0.3rem transparent;
+    border-radius: 0.5rem;
+}
+
+.form__title.title2 {
+    font-family: var(--font);
+    font-size: 2rem;
+    background: #ffffff;
+}
+
+.form__input-container {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__input--text.input__box {
+    border: none;
+    border-radius: 0.2rem;
+    width: 27rem;
+    padding: 1rem;
+}
+
+.form__input--priority.input__box {
+    border: none;
+    border-radius: 0.2rem;
+    width: 20rem;
+    color: #808080;
+}
+
+.form__button--add-task {
+    border: none;
+    background: var(--primary);
+    border-radius: 0.2rem;
+    padding: 1rem;
+    color: #ffffff;
+}

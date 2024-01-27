@@ -1,14 +1,14 @@
 const tasks = [
-  { title: "Comprar comida para o gato", type: "Urgente" },
-  { title: "Consertar Computador", type: "Importante" },
-  { title: "Beber água", type: "Normal" },
-  { title: "Enviar relatório trimestral", type: "Importante" },
-  { title: "Fazer exercícios físicos", type: "Normal" },
-  { title: "Agendar consulta médica", type: "Urgente" },
-  { title: "Ler pelo menos um capítulo de um livro", type: "Normal" },
-  { title: "Limpar a despensa", type: "Importante" },
-  { title: "Pagar a conta de energia", type: "Urgente" },
-  { title: "Assistir a um documentário interessante", type: "Normal" },
+  { title: "Comprar comida para o gato", type: "urgente" },
+  { title: "Consertar Computador", type: "importante" },
+  { title: "Beber água", type: "normal" },
+  { title: "Enviar relatório trimestral", type: "importante" },
+  { title: "Fazer exercícios físicos", type: "normal" },
+  { title: "Agendar consulta médica", type: "urgente" },
+  { title: "Ler pelo menos um capítulo de um livro", type: "normal" },
+  { title: "Limpar a despensa", type: "importante" },
+  { title: "Pagar a conta de energia", type: "urgente" },
+  { title: "Assistir a um documentário interessante", type: "normal" },
 ];
 
 function renderElements(tasksArray) {

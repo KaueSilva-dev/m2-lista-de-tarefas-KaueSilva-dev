@@ -117,12 +117,19 @@ html{
     border-radius: 0.2rem;
     padding: 1rem;
     color: #ffffff;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.form__button--add-task:hover{
+    background: var(--normal);
+    box-shadow: 10px 5px 5px #afaeae;
+    border-radius: 20px;
 }
 
 .tasks__container {
     background: #ffffff;
     width: 45rem;
-    height: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -158,6 +165,8 @@ html{
     width: 10px;
     height: 10px;
     display: block;
+    border: 1px solid transparent;
+    border-radius: 10px;
     background: var(--warning);
 }
 
@@ -166,13 +175,15 @@ html{
     background-repeat: no-repeat;
     height: 20px;
     width: 20px;
-    border: none;
+    border: 1px solid transparent;
     cursor: pointer;
 }
 
 .task-type.span-important {
     width: 10px;
     height: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
     display: block;
     background: var(--important);
 }
@@ -181,5 +192,7 @@ html{
     width: 10px;
     height: 10px;
     display: block;
+    border: 1px solid transparent;
+    border-radius: 10px;
     background: var(--normal);
 }

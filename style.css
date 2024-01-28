@@ -152,6 +152,7 @@ html{
     border: solid 1px transparent;
     border-radius: 0.2rem;
     margin-bottom: 1rem;
+    font-family: var(--font);
 }
 
 .task-info__container {

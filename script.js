@@ -56,6 +56,7 @@ function createTasksItem(tasksObject) {
 
   return liTask;
 }
+renderElements(tasks);
 
 const buttonAddTask = document.querySelector(".form__button--add-task");
 
